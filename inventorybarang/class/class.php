@@ -1,4 +1,5 @@
 <?php  
+	error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
 	session_start();
 	//set jam
 	date_default_timezone_set('Asia/Jakarta');
@@ -9,8 +10,7 @@
 		private $db = "inventory_barang";
 
 		public function sambungkan(){
-			mysql_connect($this->host,$this->user,$this->pass);
-			mysql_select_db($this->db);
+			mysqli_connect($this->host,$this->user,$this->pass,$this->db);
 		}
 	}
 	//membuat class admin
