@@ -5,7 +5,8 @@
     <title>Inventory Login</title>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <script src="js/prefixfree.min.js"></script>
+	<link rel="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" href="styles.css">
+   
   </head>
   <body>
     <div id="logo"> 
@@ -15,8 +16,8 @@
     <form method="POST">	
       <div id="fade-box">
         <input type="text" name="username" id="username" placeholder="Masukan Email" required>
-        <input type="password" name="password" placeholder="Masukan Password" required>
-        <button name="login">Log In</button> 
+        <input type="password" name="password" id="password" placeholder="Masukan Password" required>
+        <input type="submit" value="Log In" name="login">
       </div>
     </form>
         <div class="hexagons">
